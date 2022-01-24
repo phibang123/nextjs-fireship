@@ -6,7 +6,7 @@ export default function HeartButton({ postRef })
   // Listen to heart document for currently Logged in user
   const heartRef = postRef.collection('hearts').doc(auth.currentUser.uid);
   const [heartRealtime] = useDocumentData(heartRef)
-  const [heartDoc] = useDocument(heartRef);
+  //const [heartDoc] = useDocument(heartRef);
   
 
   // Create a user-to-post relationship
